@@ -1,3 +1,4 @@
+
 #include "Complex.h"
 #include <string>
 #include <iostream>
@@ -33,7 +34,7 @@ double Complex::complexSubtrai2(double g, double h){
 }
 
 void Complex::complexImprime(double i, double j){
-	cout<<"O valor do número complexo é: "<<i;
+	cout<<"O valor do nÃºmero complexo Ã©: "<<i;
 	if(j>=0){
 		cout<<"+";
 	}
