@@ -1,14 +1,21 @@
-
+/*
+ -> Helmuth August Risch Filho 
+ -> RA: 22.117.038-4
+ ->
+ -> CC3642 - Orientação a Objetos
+ ->
+ -> O programa faz a leitura do nome, sobrenome e salario de duas pessoas e imprime todas as leituras, utilizando as funções get e set
+ */
 #include "Complex.h"
 #include <string>
 #include <iostream>
 using namespace std;
-
+//Implementação do construtor Complex
 Complex::Complex(double real, double imaginario){
 	setReal(real);
 	setImaginario(imaginario);
 }
-
+//Implementação das funções de soma
 double Complex::complexSoma1(double a, double b){
 	double soma1;
 	soma1 = a + b;
@@ -20,7 +27,7 @@ double Complex::complexSoma2(double c, double d){
 	soma2 = c + d;
 	return soma2;
 }
-
+//implementação das funções de subtração
 double Complex::complexSubtrai1(double e, double f){
 	double subtrai1;
 	subtrai1 = e - f;
@@ -32,7 +39,7 @@ double Complex::complexSubtrai2(double g, double h){
 	subtrai2 = g - h;
 	return subtrai2;
 }
-
+//Implementação da função de impressão
 void Complex::complexImprime(double i, double j){
 	cout<<"O valor do número complexo é: "<<i;
 	if(j>=0){
@@ -40,7 +47,7 @@ void Complex::complexImprime(double i, double j){
 	}
 	cout<<j<<"i"<<endl;
 }
-
+//Implementação das funções de definição
 void Complex::setReal(double real){
 	this->real = real;
 }
@@ -48,7 +55,7 @@ void Complex::setReal(double real){
 void Complex::setImaginario(double imaginario){
 	this->imaginario = imaginario;
 }
-
+//Implementação das funções de "pegar" 
 double Complex::getReal(){
 	return real;
 }
