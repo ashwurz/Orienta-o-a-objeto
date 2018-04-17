@@ -15,8 +15,8 @@ public class Veiculo {
         setIndustria(true);       
         setVelocidade(velocidade);        
         setCor(cor);
-        setposX(numAleatorio.nextInt(37));
-        setposY(numAleatorio.nextInt(37));
+        setposX(numAleatorio.nextInt(60));
+        setposY(numAleatorio.nextInt(60));
     }
     
     public void setVelocidade(int velocidade) {///< Função que define a velocidade do veiculo, é passa um valor int como parâmetro
@@ -79,19 +79,19 @@ public class Veiculo {
 
         if (posx < 0){///<Condição que verifica se a posição X é inferior a 0 e em caso positivo é adicionado 37 para que o veículo surja do lado oposto
                       ///<
-            posx += 37;
+            posx += 60;
         }
-        else if (posx > 36){///<Condição que verifica se a posição X é superior a 36 e em caso positivo é subtraido em 37 para que o veículo surja do lado oposto
+        else if (posx > 59){///<Condição que verifica se a posição X é superior a 36 e em caso positivo é subtraido em 37 para que o veículo surja do lado oposto
                             ///<
-            posx -= 37;
+            posx -= 60;
         }
         else if (posy < 0){///<Condição que verifica se a posição Y é inferior a 0 e em caso positivo é adicionado em 37 para que o veículo surja do lado oposto
                            ///<
-            posy += 37;
+            posy += 60;
         }
-        else if (posy > 36){///<Condição que verifica se a posição Y é superior a 36 e em caso positivo é subtraido em 37 para que o veículo surja do lado oposto
+        else if (posy > 59){///<Condição que verifica se a posição Y é superior a 36 e em caso positivo é subtraido em 37 para que o veículo surja do lado oposto
                             ///<
-            posy -= 37;
+            posy -= 60;
         }
 
     }
